@@ -5,17 +5,29 @@
  */
 package ar;
 
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+
 /**
  *
- * @author Cielo
+ * @author Cielo estan mimidos :0no :0 no ccore
  */
 public class Ar {
 
     /**
-     * @param args the command line arguments
+     * @param args the command line arguments esta vazioooooo
      */
+    static Connection conect;
+
     public static void main(String[] args) {
-        // TODO code application logic here
+        try {
+            String connectionUrl = "jdbc:sqlserver://;database=DB_Name;integratedSecurity=true;";
+            conect = DriverManager.getConnection(connectionUrl);
+            System.out.println("Conectado.");
+        } catch (SQLException ex) {
+            System.out.println("Error.");
+        }
+
     }
-    
 }
