@@ -12,7 +12,8 @@ package ar;
 public class querys {
     
 }
-/*CREATE DATABASE [Arquitectos]
+/*
+CREATE DATABASE [Arquitectos]
 
 GO
 Create table [Cliente]
@@ -104,4 +105,5 @@ GO
 USE [master]
 GO
 ALTER DATABASE [Arquitectos] SET  READ_WRITE 
-GO*/
+GO
+*/
