@@ -21,9 +21,8 @@ Create Table [Usuario](
 [Id] Integer Not Null,
 [Usuario] varchar not null,
 [Contraseña] varchar not null,
-[IdEmpleado] integer null,
-Primary Key([Id]),
-foreign key (IdEmpleado) REFERENCES Empleado(Id)  
+[IdEmpleado] integer UNIQUE FOREIGN KEY REFERENCES Empleado(Id),
+Primary Key([Id])
 )
 GO
 
@@ -67,4 +66,3 @@ GO
 ALTER TABLE [dbo].[Empleado]  WITH CHECK ADD FOREIGN KEY([IdProyecto])
 REFERENCES [dbo].[Proyecto] ([Id])
 GO
-
