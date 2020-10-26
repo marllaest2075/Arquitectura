@@ -16,17 +16,17 @@ import java.sql.SQLException;
 public class Ar {
 
     /**
-     * @param args the command line arguments esta vazioooooo
+     * @param args the command line arguments 
      */
     static Connection conect;
 
     public static void main(String[] args) {
         try {
-            String connectionUrl = "jdbc:sqlserver://;database=DB_Name;integratedSecurity=true;";
+            String connectionUrl = "jdbc:sqlserver://localhost:1433;database=Arquitectos;integratedSecurity=true;";
             conect = DriverManager.getConnection(connectionUrl);
             System.out.println("Conectado.");
         } catch (SQLException ex) {
-            System.out.println("Error.");
+            System.out.println("Error."+ex);
         }
 
     }
