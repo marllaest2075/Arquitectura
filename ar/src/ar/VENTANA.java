@@ -15,8 +15,10 @@ public class VENTANA extends javax.swing.JFrame {
      * Creates new form VENTANA
      */
     public VENTANA() {
-        
         initComponents();
+        Cliente.setBounds(0, 0, 0, 0);        
+        Empleado.setBounds(0, 0, 0, 0); 
+        Proyecto.setBounds(0, 0, 0, 0); 
     }
 
     /**
