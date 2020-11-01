@@ -41,6 +41,7 @@ public class Consultas {
         
         
     }
+    //
     
      public int GuardarEmpleadoConPro(String nomina,String telefono,String nombre,String correo,Boolean jefe, int Idjefe ){
         int jala = -1;
